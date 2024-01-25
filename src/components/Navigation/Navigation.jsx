@@ -14,8 +14,8 @@ const Navigation = () => {
           <NavLink to="/contacts">Contacts</NavLink>
         ) : (
           <div>
-            {!isLoggedIn && <Nav to="/register">Register</Nav>}
-            {!isLoggedIn && <Nav to="/login">Log In</Nav>}
+            {!isLoggedIn && <NavLink to="/register">Register</NavLink>}
+            {!isLoggedIn && <NavLink to="/login">Log In</NavLink>}
           </div>
         )}
       </div>
