@@ -1,0 +1,53 @@
+.container {
+  position: relative;
+  margin: 25px;
+  padding: 20px;
+  width: 600px;
+  height: 700px;
+  border: double 5px var(--bg-gradient);
+  
+
+
+  background: url(../../img/phonebook.png) no-repeat  top right;
+  background-size: 235px 240px;
+  background-position: calc(100% - 25px) calc(0% + 88px);
+ 
+
+
+  box-shadow: var(--shadow-container);
+  overflow: hidden;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom right, var(--bg-gradient), var(--bg-gradient-green));
+  z-index: -1; 
+}
+
+
+.main-title {
+  font-family: 'Monaco', monospace;
+  padding-bottom: 30px;
+  text-shadow: var(--shadow-main-title);
+}
+
+.contacts-title {
+  font-family: 'Monaco', monospace;
+  padding: 20px 0 10px;
+  text-shadow: var(--shadow-title);
+}
+
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  padding: 20px;
+  background-color: var(--container-bg);
+  border-radius: 8px;
+  box-shadow: var(--shadow-card);
+}

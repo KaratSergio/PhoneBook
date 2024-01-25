@@ -1,0 +1,50 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.item {
+  padding-left: 3px;
+  height: 25px;
+  background: linear-gradient(to right, var(--contact-list-bg), var(--white));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactInfo {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+.name {
+  font-family: 'source-code-pro';
+  font-size: 18px;
+}
+.nameContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nameIcon {
+  color: rgb(9, 90, 90);
+}
+
+.deleteButton {
+  display: flex;
+  gap: 6px;
+  background-color: var(--red);
+  color: var(--white);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  box-shadow: var(--shadow-btn-box);
+  text-shadow: var(--shadow-btn-txt);
+}
+
+.deleteButton:hover {
+  background-color: var(--red-accent);
+}
