@@ -2,12 +2,19 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { Grid } from 'react-loader-spinner';
 
+import { fetchContacts } from '../redux/contacts/operations';
+import { selectLoading, selectError } from '../redux/contacts/selectors';
+
+import { Filter } from '../components/Filter/Filter';
+import { ContactList } from '../components/ContactList/ContactList';
+import { ContactForm } from '../components/form/ContactForm/ContactForm';
+
 const { useEffect } = require('react');
 const { useDispatch, useSelector } = require('react-redux');
 
 const Contacts = () => {
   const dispatch = useDispatch();
-  const isLoading = useSelector(selectIsloading);
+  const isLoading = useSelector(selectLoading);
   const error = useSelector(selectError);
 
   useEffect(() => {

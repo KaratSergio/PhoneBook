@@ -1,8 +1,9 @@
 import { useDispatch, useSelector } from 'react-redux';
+import { selectErrorLogin } from '../../../redux/auth/selectors';
 
 export const LoginForm = () => {
   const dispatch = useDispatch();
-  const errorLogin = useSelector(state => state.error); // Dont FORGET !!! import selector
+  const errorLogin = useSelector(selectErrorLogin);
 
   const handleSubmit = e => {
     e.preventDefault();

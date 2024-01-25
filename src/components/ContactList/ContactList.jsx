@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteContact } from '../../redux/operations';
-import * as selectors from '../../redux/selectors';
+import * as selectors from '../../redux/contacts/selectors';
 import { Loader } from '../Loader/Loader';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
