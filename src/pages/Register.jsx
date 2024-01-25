@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import { RegisterForm } from '../components/Form/authForms/RegisterForm';
 
 const Register = () => {
   return (
