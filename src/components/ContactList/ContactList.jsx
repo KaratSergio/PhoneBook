@@ -33,7 +33,7 @@ const ContactList = () => {
   const filteredContacts = useSelector(selectors.selectFilteredContacts);
   const isLoading = useSelector(selectors.selectLoading);
   const error = useSelector(selectors.selectError);
-  
+
   const handleDelete = contact => dispatch(deleteContact(contact.id));
 
   return (
