@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { addContact } from '../../../redux/operations';
+import { addContact } from '../../../redux/contacts/operations';
 import * as selectors from '../../../redux/contacts/selectors';
 import { nanoid } from '@reduxjs/toolkit';
 
@@ -11,7 +11,7 @@ import { faUser, faPhone, faCheck } from '@fortawesome/free-solid-svg-icons';
 
 import css from './ContactForm.module.css';
 
-const ContactForm = () => {
+export const ContactForm = () => {
   const dispatch = useDispatch();
   const contacts = useSelector(selectors.selectContacts);
   const isLoading = useSelector(selectors.selectLoading);

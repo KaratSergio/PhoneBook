@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import { selectIsLoggedIn } from '../../redux/auth/selectors';
 import { UserMenu } from '../UserMenu/UserMenu';
 
-const Navigation = () => {
+export const Navigation = () => {
   const isLoggedIn = useSelector(selectIsLoggedIn);
 
   return (

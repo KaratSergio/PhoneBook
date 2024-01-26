@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { deleteContact } from '../../redux/operations';
+import { deleteContact } from '../../redux/contacts/operations';
 import * as selectors from '../../redux/contacts/selectors';
 import { Loader } from '../Loader/Loader';
 
@@ -28,7 +28,7 @@ const ContactListItem = ({ contact, onDelete }) => (
   </li>
 );
 
-const ContactList = () => {
+  export const ContactList = () => {
   const dispatch = useDispatch();
   const filteredContacts = useSelector(selectors.selectFilteredContacts);
   const isLoading = useSelector(selectors.selectLoading);

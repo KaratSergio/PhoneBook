@@ -5,7 +5,7 @@ import {
   selectIsRefreshing,
 } from '../../redux/auth/selectors';
 
-const AuthRoute = ({ component: Component, redirectTo = '/' }) => {
+export const AuthRoute = ({ component: Component, redirectTo = '/' }) => {
   const isLoggedIn = useSelector(selectIsLoggedIn);
   const isRefreshing = useSelector(selectIsRefreshing);
 

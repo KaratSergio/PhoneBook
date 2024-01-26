@@ -1,30 +1,62 @@
-import ContactForm from '../Form/ContactForm/ContactForm';
-import ContactList from '../ContactList/ContactList';
-import Filter from '../Filter/Filter';
+import { useEffect, lazy } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
 
-import { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
-import { fetchContacts } from '../../redux/operations';
+import { selectIsRefreshing } from '../../redux/auth/selectors';
+import { refreshUser } from '../../redux/auth/operations';
 
-import css from './App.module.css';
+import { AuthRoute } from '../Routes/AuthRoute';
+import { GuestRoute } from '../Routes/GuestRoute';
+
+import { Home } from '../../pages/Home';
+import { Layout } from '../Layout/Layout';
+import { Loader } from '../Loader/Loader';
+
+const LoginPage = lazy(() => import('../../pages/Login'));
+const RegisterPage = lazy(() => import('../../pages/Register'));
+const ContactsPage = lazy(() => import('../../pages/Contacts'));
 
 const App = () => {
   const dispatch = useDispatch();
+  const isRefreshing = useSelector(selectIsRefreshing);
 
   useEffect(() => {
-    dispatch(fetchContacts());
+    dispatch(refreshUser());
   }, [dispatch]);
 
   return (
-    <section className={css.container}>
-      <h1 className={css['main-title']}>Phonebook</h1>
-      <ContactForm />
-      <h2 className={css['contacts-title']}>Contacts</h2>
-      <div className={css['filter-container']}>
-        <Filter />
-        <ContactList />
-      </div>
-    </section>
+    <>
+      {isRefreshing ? (
+        <Loader />
+      ) : (
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route
+              path="register"
+              element={
+                <GuestRoute
+                  redirectTo="/contacts"
+                  component={<RegisterPage />}
+                />
+              }
+            />
+            <Route
+              path="login"
+              element={
+                <GuestRoute redirectTo="/contacts" component={<LoginPage />} />
+              }
+            />
+            <Route
+              path="contacts"
+              element={
+                <AuthRoute redirectTo="/login" component={<ContactsPage />} />
+              }
+            />
+          </Route>
+        </Routes>
+      )}
+    </>
   );
 };
 

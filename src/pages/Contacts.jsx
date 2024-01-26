@@ -7,10 +7,7 @@ import { selectLoading, selectError } from '../redux/contacts/selectors';
 
 import { Filter } from '../components/Filter/Filter';
 import { ContactList } from '../components/ContactList/ContactList';
-import { ContactForm } from '../components/form/ContactForm/ContactForm';
-
-const { useEffect } = require('react');
-const { useDispatch, useSelector } = require('react-redux');
+import { ContactForm } from '../components/Form/ContactForm/ContactForm';
 
 const Contacts = () => {
   const dispatch = useDispatch();
