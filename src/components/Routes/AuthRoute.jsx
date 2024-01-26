@@ -10,7 +10,6 @@ export const AuthRoute = ({ component: Component, redirectTo = '/' }) => {
   const isRefreshing = useSelector(selectIsRefreshing);
 
   const shouldRedirect = !isLoggedIn && !isRefreshing;
-  return shouldRedirect ? <Navigate to={redirectTo} /> : <Component />;
+  return shouldRedirect ? <Navigate to={redirectTo} /> : Component;
 };
 
-export default AuthRoute;

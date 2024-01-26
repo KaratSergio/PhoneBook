@@ -44,13 +44,19 @@ const App = () => {
             <Route
               path="login"
               element={
-                <GuestRoute redirectTo="/contacts" component={<LoginPage />} />
+                <GuestRoute
+                  redirectTo="/contacts"
+                  component={<LoginPage />}
+                />
               }
             />
             <Route
               path="contacts"
               element={
-                <AuthRoute redirectTo="/login" component={<ContactsPage />} />
+                <AuthRoute
+                  redirectTo="/login"
+                  component={<ContactsPage />}
+                />
               }
             />
           </Route>
