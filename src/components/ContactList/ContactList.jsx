@@ -35,7 +35,12 @@ const ContactListItem = ({ contact, onDelete }) => (
   const error = useSelector(selectors.selectError);
 
   const handleDelete = contact => dispatch(deleteContact(contact.id));
-
+  
+    // if (error) {
+    //   console.error('Error in ContactList:', error);
+    //   return <div className={css.error}>{error}</div>;
+    // }
+    
   return (
     <div>
       {isLoading && <Loader />}

@@ -6,7 +6,7 @@ import css from './Filter.module.css';
 
 export const Filter = () => {
   const dispatch = useDispatch();
-  const filterValue = useSelector(selectors.selectFilter);
+  const filterValue = useSelector(selectors.selectFilters);
 
   const handleFilterChange = event => {
     dispatch(setFilter(event.target.value));
