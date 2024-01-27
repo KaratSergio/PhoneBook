@@ -13,8 +13,8 @@ import { Layout } from '../Layout/Layout';
 import { Loader } from '../Loader/Loader';
 
 const LoginPage = lazy(() => import('../../pages/Login/Login'));
-const RegisterPage = lazy(() => import('../../pages/Register'));
-const ContactsPage = lazy(() => import('../../pages/Contacts'));
+const RegisterPage = lazy(() => import('../../pages/Register/Register'));
+const ContactsPage = lazy(() => import('../../pages/Contacts/Contacts'));
 
 const App = () => {
   const dispatch = useDispatch();
