@@ -12,7 +12,7 @@ import { Home } from '../../pages/Home';
 import { Layout } from '../Layout/Layout';
 import { Loader } from '../Loader/Loader';
 
-const LoginPage = lazy(() => import('../../pages/Login'));
+const LoginPage = lazy(() => import('../../pages/Login/Login'));
 const RegisterPage = lazy(() => import('../../pages/Register'));
 const ContactsPage = lazy(() => import('../../pages/Contacts'));
 
@@ -44,19 +44,13 @@ const App = () => {
             <Route
               path="login"
               element={
-                <GuestRoute
-                  redirectTo="/contacts"
-                  component={<LoginPage />}
-                />
+                <GuestRoute redirectTo="/contacts" component={<LoginPage />} />
               }
             />
             <Route
               path="contacts"
               element={
-                <AuthRoute
-                  redirectTo="/login"
-                  component={<ContactsPage />}
-                />
+                <AuthRoute redirectTo="/login" component={<ContactsPage />} />
               }
             />
           </Route>

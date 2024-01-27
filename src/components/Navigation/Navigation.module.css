@@ -1,0 +1,10 @@
+.container {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-box {
+    display: flex;
+    gap: 30px;
+}

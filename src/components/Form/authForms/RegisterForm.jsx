@@ -1,5 +1,8 @@
 import { useDispatch } from 'react-redux';
 import { register } from '../../../redux/auth/operations';
+import { NavLink } from 'react-router-dom';
+
+import css from './Forms.module.css';
 
 export const RegisterForm = () => {
   const dispatch = useDispatch();
@@ -19,37 +22,53 @@ export const RegisterForm = () => {
     };
     
       return (
-        <form autoComplete="off" onSubmit={handleSubmit}>
-          <label>
-            Username
-            <input
-              type="text"
-              name="name"
-              required
-              placeholder="Nick Name"
-              minLength={3}
-            />
-          </label>
-          <label>
-            Email
-            <input
-              type="email"
-              name="email"
-              required
-              placeholder="your-mail@gmail.com"
-            />
-          </label>
-          <label>
-            Password
-            <input
-              type="password"
-              name="password"
-              minLength={7}
-              required
-              placeholder="*******"
-            />
-          </label>
-          <button type="submit">Register</button>
-        </form>
+        <div className={css['ring']}>
+          <i style={{ '--clr': '#00ff0a' }}></i>
+          <i style={{ '--clr': '#ff0057' }}></i>
+          <i style={{ '--clr': '#fffd44' }}></i>
+          <div className={css['login']}>
+            <h2>Registration</h2>
+            <form autoComplete="off" onSubmit={handleSubmit}>
+              <label className={css['inputBx']}>
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  placeholder="Nick Name"
+                  minLength={3}
+                  autoFocus
+                />
+              </label>
+              <label className={css['inputBx']}>
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="E-mail@gmail.com"
+                  autoComplete="username"
+                />
+              </label>
+              <label className={css['inputBx']}>
+                <input
+                  type="password"
+                  name="password"
+                  minLength={7}
+                  required
+                  placeholder="Password"
+                  autoComplete="current-password"
+                />
+              </label>
+              <button className={css['button']} type="submit">
+                Register
+              </button>
+              <p className={css['text']}>
+                Already registered?{' '}
+                <NavLink className={css['text-link']} to={'/login'}>
+                  Sign in
+                </NavLink>
+              </p>
+            </form>
+          </div>
+        </div>
       );
 };
