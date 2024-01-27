@@ -10,8 +10,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 
 .navigation {
-  margin-bottom: 120px;
+  margin: 40px 0 40px;
 }

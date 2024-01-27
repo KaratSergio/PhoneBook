@@ -8,7 +8,7 @@ import { refreshUser } from '../../redux/auth/operations';
 import { AuthRoute } from '../Routes/AuthRoute';
 import { GuestRoute } from '../Routes/GuestRoute';
 
-import { Home } from '../../pages/Home';
+import { Home } from '../../pages/Home/Home';
 import { Layout } from '../Layout/Layout';
 import { Loader } from '../Loader/Loader';
 
