@@ -22,7 +22,7 @@
 .env.test.local
 .env.production.local
 
-npm-debug.log*
+npm-debug.log*AuthForm/
 yarn-debug.log*
 yarn-error.log*
 node_modules
