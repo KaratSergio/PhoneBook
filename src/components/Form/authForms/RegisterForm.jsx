@@ -34,7 +34,7 @@ export const RegisterForm = () => {
                   type="text"
                   name="name"
                   required
-                  placeholder="Nick Name"
+                  placeholder="nick-name"
                   minLength={3}
                   autoFocus
                 />
@@ -44,7 +44,7 @@ export const RegisterForm = () => {
                   type="email"
                   name="email"
                   required
-                  placeholder="E-mail@gmail.com"
+                  placeholder="e-mail@gmail.com"
                   autoComplete="username"
                 />
               </label>
@@ -54,7 +54,7 @@ export const RegisterForm = () => {
                   name="password"
                   minLength={7}
                   required
-                  placeholder="Password"
+                  placeholder="password"
                   autoComplete="current-password"
                 />
               </label>

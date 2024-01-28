@@ -14,13 +14,13 @@ export const Filter = () => {
 
   return (
     <label className={css['name-label']}>
-      Find contacts by name
       <input
         className={css['name-input']}
         type="text"
         name="filter"
         value={filterValue || ''}
         onChange={handleFilterChange}
+        placeholder="Find contacts by name"
         required
       />
     </label>

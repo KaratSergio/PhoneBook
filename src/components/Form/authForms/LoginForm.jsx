@@ -36,7 +36,7 @@ export const LoginForm = () => {
               <input
                 type="email"
                 name="email"
-                placeholder="E-Mail"
+                placeholder="e-mail"
                 autoComplete="username"
                 required
                 autoFocus
@@ -46,7 +46,7 @@ export const LoginForm = () => {
               <input
                 type="password"
                 name="password"
-                placeholder="Password"
+                placeholder="password"
                 autoComplete="current-password"
                 required
               />

@@ -1,8 +1,9 @@
 .container {
   margin: 20px;
   padding: 20px;
-  width: 680px;
-  height: 830px;
+  width: 630px;
+  height: 780px;
+  border: 50px solid rgb(2, 31, 31);
   /* background-image: url('../../img/fon3.jpg');
   background-size: cover; 
   background-position: center;  */

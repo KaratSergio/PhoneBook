@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  gap: 78px;
+}
+.main-box {
+  position: relative;
+  height: 100px;
+}
+.rectangle-left,
+.rectangle-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+.rectangle-left {
+  width: 297.5px;
+  height: 155px;
+  color: #111;
+  background: linear-gradient(to right, #ffc107, #ffd700);
+}
+.rectangle-right {
+  width: 205px;
+  height: 156px;
+  color: #111;
+  background: linear-gradient(to right, #ffc107, #ffd700);
+}
+.logo-text {
+  font-family: Arial, sans-serif;
+  font-size: 120px;
+  font-weight: 900;
+}
+.accent-text p {    
+  color: #000;
+  font-size: 45px;
+  margin-top: -5px;
+  letter-spacing: 0.3em;
+  text-shadow: 2px 2px 4px rgba(7, 200, 218, 0.5);
+}
+.triangle {
+  position: absolute;
+  top: 38.8px;
+  left: 258.5px;
+  width: 0;
+  height: 0;
+  border-left: 78px solid transparent;
+  border-right: 78px solid transparent;
+  border-bottom: 78px solid #ffd700;
+  transform: rotate(90deg);
+}
