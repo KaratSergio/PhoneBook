@@ -8,7 +8,6 @@
   border-radius: 8px;
   box-shadow: var(--shadow-card);
 }
-
 .button {
   font-family: 'source-code-pro';
   font-size: 14px;
@@ -27,15 +26,14 @@
 .iconBtn {
   margin-right: 6px;
 }
-
 .button:hover {
   background-color: var(--btn-bg-hover);
 }
 .name-label input::placeholder {
-color: rgba(255, 255, 255, 0.738);
+  color: rgba(255, 255, 255, 0.738);
 }
 .tel-label input::placeholder {
-color: rgba(255, 255, 255, 0.738);
+  color: rgba(255, 255, 255, 0.738);
 }
 .tel-label {
   margin-left: 10px;
@@ -60,7 +58,6 @@ color: rgba(255, 255, 255, 0.738);
   background-color: #111;
   box-shadow: var(--input-box-shadow);
 }
-
 .label-box {
   display: flex;
   align-items: center;

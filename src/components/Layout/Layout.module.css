@@ -4,16 +4,12 @@
   width: 630px;
   height: 780px;
   border: 50px solid rgb(2, 31, 31);
-  /* background-image: url('../../img/fon3.jpg');
-  background-size: cover; 
-  background-position: center;  */
   background: #111;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
-
 .navigation {
   margin: 40px 0 40px;
 }

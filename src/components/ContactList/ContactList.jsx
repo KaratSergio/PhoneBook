@@ -28,14 +28,14 @@ const ContactListItem = ({ contact, onDelete }) => (
   </li>
 );
 
-  export const ContactList = () => {
+export const ContactList = () => {
   const dispatch = useDispatch();
   const filteredContacts = useSelector(selectors.selectFilteredContacts);
   const isLoading = useSelector(selectors.selectLoading);
   const error = useSelector(selectors.selectError);
 
   const handleDelete = contact => dispatch(deleteContact(contact.id));
-  
+
   return (
     <div>
       {isLoading && <Loader />}
