@@ -8,7 +8,7 @@ export const Home = () => {
         <h1>
           Welcome to <span>Phonebook</span>!
         </h1>
-        <p>enjoy every moment</p>
+        <p>created on react</p>
       </div>
     <div>
       <Logo />

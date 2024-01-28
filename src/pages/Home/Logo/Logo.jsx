@@ -5,15 +5,13 @@ export const Logo = () => {
     <div className={css['container']}>
       <div className={css['main-box']}>
         <div className={css['rectangle-left']}>
-          <p className={css['logo-text']}>G</p>
-          <p className={css['logo-text']}>O</p>
+          <p className={css['logo-text']}>GO</p>
         </div>
         <div className={css['triangle']}></div>
       </div>
       <div>
         <div className={css['rectangle-right']}>
-          <p className={css['logo-text']}>I</p>
-          <p className={css['logo-text']}>T</p>
+          <p className={css['logo-text']}>IT</p>
         </div>
         <div className={css['accent-text']}>
           <p>school</p>
