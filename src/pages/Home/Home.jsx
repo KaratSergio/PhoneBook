@@ -1,5 +1,5 @@
-import {Logo} from './Logo/Logo'
-import css from './Home.module.css'
+import { Logo } from './Logo/Logo';
+import css from './Home.module.css';
 
 export const Home = () => {
   return (
@@ -10,9 +10,9 @@ export const Home = () => {
         </h1>
         <p>created on react</p>
       </div>
-    <div>
-      <Logo />
-    </div>
+      <div>
+        <Logo />
+      </div>
     </section>
   );
 };

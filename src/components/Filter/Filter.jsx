@@ -2,6 +2,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setFilter } from '../../redux/contacts/filterSlice';
 import * as selectors from '../../redux/contacts/selectors';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFilter } from '@fortawesome/free-solid-svg-icons';
+
 import css from './Filter.module.css';
 
 export const Filter = () => {
@@ -14,6 +17,8 @@ export const Filter = () => {
 
   return (
     <label className={css['name-label']}>
+      <FontAwesomeIcon icon={faFilter} className={css['icon-label']} />
+      Filter
       <input
         className={css['name-input']}
         type="text"

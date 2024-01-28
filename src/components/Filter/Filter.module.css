@@ -2,6 +2,7 @@
   font-size: 22px;
   text-shadow: var(--label-shadow);
   font-family: 'Menlo';
+  color: #ffc107;
 }
 .name-input {
   display: flex;
@@ -10,7 +11,15 @@
   width: 258px;
   border: var(--accent-border);
   border-radius: 4px;
-  background-color: var(--input-bg);
+  background-color: #111;
   box-shadow: var(--input-box-shadow);
   margin: 5px 0 20px;
+}
+.name-label input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+.icon-label {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;;
 }

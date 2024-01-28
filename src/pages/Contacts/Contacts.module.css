@@ -1,6 +1,12 @@
 .container {
-  background: rgb(25, 25, 25);
-  width: 680px;
+  width: 630px;
   height: 650px;
-  border-radius: 10px;
+
+}
+
+.box {
+  width: 590px;
+  background-color: rgb(2, 31, 31);
+  border-radius: 8px;
+  padding: 20px;
 }

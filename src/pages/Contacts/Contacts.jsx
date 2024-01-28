@@ -9,7 +9,7 @@ import { Filter } from '../../components/Filter/Filter';
 import { ContactList } from '../../components/ContactList/ContactList';
 import { ContactForm } from '../../components/Form/ContactForm/ContactForm';
 
-import css from './Contacts.module.css'
+import css from './Contacts.module.css';
 
 const Contacts = () => {
   const dispatch = useDispatch();
@@ -22,10 +22,9 @@ const Contacts = () => {
 
   return (
     <div className={css['container']}>
-      <h1>Your phonebook</h1>
+      <h1>Phonebook</h1>
       <ContactForm />
       <h2>Contacts</h2>
-      <Filter />
       {isLoading && !error && (
         <Grid
           visible={true}
@@ -38,7 +37,10 @@ const Contacts = () => {
           wrapperClass="grid-wrapper"
         />
       )}
-      <ContactList />
+      <div className={css['box']}>
+        <Filter />
+        <ContactList />
+      </div>
     </div>
   );
 };
