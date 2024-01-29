@@ -2,6 +2,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { logOut } from '../../redux/auth/operations';
 import { selectUser } from '../../redux/auth/selectors';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSignOut } from '@fortawesome/free-solid-svg-icons';
+
 import css from './UserMenu.module.css'
 
 export const UserMenu = () => {
@@ -16,6 +19,7 @@ export const UserMenu = () => {
         type="button"
         onClick={() => dispatch(logOut())}
       >
+        <FontAwesomeIcon icon={faSignOut} />
         Logout
       </button>
     </div>

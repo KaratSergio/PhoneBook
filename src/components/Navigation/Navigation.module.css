@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 260px;
+  width: 320px;
   height: 40px;
   gap: 30px;
   border-radius: 25px;
@@ -19,4 +19,9 @@
 .sign-box {
   display: flex;
   gap: 30px;
+}
+.icon-box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }

@@ -6,11 +6,13 @@
   margin-top: 8px;
 }
 .button {
+  display: flex;
   border: none;
   cursor: pointer;
   margin-top: 8px;
   padding: 4px 12px;
   border-radius: 40px;
+  gap: 4px;
   background: var(--btn-gradient);
   transition: background-color 0.3s ease-in-out;
 }
