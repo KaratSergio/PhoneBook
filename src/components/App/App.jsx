@@ -11,6 +11,7 @@ import { GuestRoute } from '../Routes/GuestRoute';
 import { Home } from '../../pages/Home/Home';
 import { Layout } from '../Layout/Layout';
 import { Loader } from '../Loader/Loader';
+import { NotFound } from '../../pages/NotFound/NotFound';
 
 const LoginPage = lazy(() => import('../../pages/Login/Login'));
 const RegisterPage = lazy(() => import('../../pages/Register/Register'));
@@ -53,6 +54,7 @@ const App = () => {
                 <AuthRoute redirectTo="/login" component={<ContactsPage />} />
               }
             />
+            <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
       )}
