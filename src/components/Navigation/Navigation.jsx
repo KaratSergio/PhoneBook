@@ -13,17 +13,10 @@ export const Navigation = () => {
 
   useEffect(() => {
     const currentPath = location.pathname;
-    const storedActiveMenu = localStorage.getItem('activeMenu');
-
-    if (storedActiveMenu && currentPath === storedActiveMenu) {
-      setActiveMenu(storedActiveMenu);
-    } else {
-      setActiveMenu('');
-    }
+    setActiveMenu(currentPath);
   }, [location.pathname]);
 
   const handleMenuClick = menu => {
-    localStorage.setItem('activeMenu', menu);
     setActiveMenu(menu);
   };
 

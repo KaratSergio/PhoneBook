@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { Grid } from 'react-loader-spinner';
+import { Loader } from '../../components/Loader/Loader';
 
 import { fetchContacts } from '../../redux/contacts/operations';
 import { selectLoading, selectError } from '../../redux/contacts/selectors';
@@ -22,20 +22,11 @@ const Contacts = () => {
 
   return (
     <div className={css['container']}>
-      <h1>Phonebook</h1>
+      <h1 className={css['title']}>Phonebook</h1>
       <ContactForm />
-      <h2>Contacts</h2>
+      <h2 className={css['sub-title']}>Contacts</h2>
       {isLoading && !error && (
-        <Grid
-          visible={true}
-          height="80"
-          width="80"
-          color="gray"
-          ariaLabel="grid-loading"
-          radius="12.5"
-          wrapperStyle={{}}
-          wrapperClass="grid-wrapper"
-        />
+        <Loader />
       )}
       <div className={css['box']}>
         <Filter />

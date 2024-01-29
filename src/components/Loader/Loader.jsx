@@ -1,17 +1,15 @@
 import styles from './Loader.module.css';
-import { Grid } from 'react-loader-spinner';
+import { DNA } from 'react-loader-spinner';
 
 export const Loader = () => (
   <div className={styles['loader-container']}>
-    <Grid
+    <DNA
       visible={true}
       height="80"
       width="80"
-      color="gray"
-      ariaLabel="grid-loading"
-      radius="12.5"
+      ariaLabel="dna-loading"
       wrapperStyle={{}}
-      wrapperClass="grid-wrapper"
+      wrapperClass="dna-wrapper"
     />
   </div>
 );

@@ -11,7 +11,8 @@
   width: 258px;
   border: var(--accent-border);
   border-radius: 4px;
-  background-color: #111;
+  color: var(--white);
+  background-color: var(--black);
   box-shadow: var(--input-box-shadow);
   margin: 5px 0 20px;
 }

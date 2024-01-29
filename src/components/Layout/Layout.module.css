@@ -1,9 +1,11 @@
 .container {
+  position: relative;
   margin: 10px;
   padding: 20px;
   width: 630px;
   height: 780px;
-  border: 40px solid rgb(2, 31, 31);
+  border: 36px solid rgb(2, 31, 31);
+  border-radius: 20px;
   background: #111;
   display: flex;
   flex-direction: column;

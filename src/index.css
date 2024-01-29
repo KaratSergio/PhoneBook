@@ -3,13 +3,14 @@
 :root {
   /* App */
   --bg-gradient: #8dd3d8;
-  --bg-gradient-green: #639b68;
+  --bg-gradient-green: rgb(2, 31, 31);
   --container-bg: #f5f5f5;
   --shadow-container: 10px 6px 12px rgb(139, 153, 213);
   --shadow-main-title: 0 5px 4px rgba(0, 0, 0, 0.2);
   --shadow-card: 4px 2px 4px rgba(0, 0, 0, 0.2);
   --shadow-title: 2px 2px 4px rgba(0, 0, 0, 0.3);
   /* contact-form */
+  --black: #111;
   --white: #ffffff;
   --btn-bg: #007bff;
   --btn-bg-hover: #0056b3;
@@ -25,30 +26,25 @@
   --label-shadow: 1px 2px 4px rgba(73, 125, 115, 0.5);
   --accent-border: 1px solid #ddd;
 }
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 body {
   color: white;
   margin: 0;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  background-image: url('./img/bg-fon.jpg');
+  background-size: cover;
+  background-position: center;
 }
-
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
-
 a {
   color: currentColor;
   text-decoration: none;
 }
-
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-
 h1,
 h2,
 h3,
@@ -58,13 +54,11 @@ h6,
 p {
   margin: 0;
 }
-
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-
 button {
   cursor: pointer;
 }

@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   max-width: 630px;
   padding: 0 20px 20px;
-  background-color: rgb(2, 31, 31);
+  background-color: var(--bg-gradient-green);
   border-radius: 8px;
   box-shadow: var(--shadow-card);
 }
@@ -15,6 +15,7 @@
   padding: 9px;
   margin: 10px 0 0;
   background: linear-gradient(7deg, #fff172, #ff357a);
+  transition: background-color 0.4s ease-in-out;
   color: #000;
   border: none;
   border-radius: 4px;
@@ -23,11 +24,11 @@
   text-shadow: var(--shadow-btn-txt);
   margin-left: 168px;
 }
+.button:hover {
+  background: linear-gradient(45deg, #ff0077, #ffd500);
+}
 .iconBtn {
   margin-right: 6px;
-}
-.button:hover {
-  background-color: var(--btn-bg-hover);
 }
 .name-label input::placeholder {
   color: rgba(255, 255, 255, 0.738);
@@ -55,6 +56,7 @@
   border: var(--accent-border);
   border-radius: 4px;
   margin-top: 5px;
+  color: var(--white);
   background-color: #111;
   box-shadow: var(--input-box-shadow);
 }
