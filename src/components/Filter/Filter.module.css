@@ -13,7 +13,7 @@
   border-radius: 4px;
   color: var(--white);
   border: var(--accent-border);
-  background-color: var(--black);
+  background-color: var(--black-bg);
   box-shadow: var(--input-box-shadow);
 }
 .name-label input::placeholder {

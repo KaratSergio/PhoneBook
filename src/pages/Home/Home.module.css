@@ -1,7 +1,22 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 300px;
-    gap: 40px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 300px;
+  gap: 40px;
 }
-
+.react-logo-box {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.react-logo-box p {
+  font-family: monospace;
+}
+.react-logo-box span {
+    color: var(--gold);
+    font-family: fantasy;
+}
+.react-logo {
+  width: 20px;
+  height: 20px;
+}
