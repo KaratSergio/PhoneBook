@@ -1,16 +1,16 @@
 .container {
   position: relative;
-  margin: 10px;
-  padding: 20px;
-  width: 630px;
-  height: 780px;
-  border: 36px solid rgb(2, 31, 31);
-  border-radius: 20px;
-  background: #111;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  margin: 10px;
+  padding: 20px;
+  width: 630px;
+  height: 780px;
+  border-radius: 20px;
+  background: var(--black-bg);
+  border: 36px solid var(--green);
 }
 .navigation {
   margin: 40px 0 40px;

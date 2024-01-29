@@ -4,9 +4,9 @@
 }
 .box {
   width: 590px;
-  background-color: rgb(2, 31, 31);
-  border-radius: 8px;
   padding: 20px;
+  border-radius: 8px;
+  background-color: var(--green);
 }
 .title {
   letter-spacing: 0.2em;

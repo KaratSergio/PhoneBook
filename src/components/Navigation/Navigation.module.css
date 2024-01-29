@@ -1,17 +1,17 @@
 .container {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 260px;
   height: 40px;
   gap: 30px;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(2, 31, 31);
   border-radius: 25px;
+  background-color: var(--green);
 }
 .container a:hover,
 .container a.active {
   font-weight: 600;
-  background: linear-gradient(45deg, #ff357a, #fff172);
+  background: var(--btn-gradient);
   -webkit-background-clip: text;
   color: transparent;
   text-fill-color: transparent;

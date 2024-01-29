@@ -1,40 +1,37 @@
 .form-container {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
+  align-items: center;
   max-width: 630px;
-  padding: 0 20px 20px;
-  background-color: var(--bg-gradient-green);
   border-radius: 8px;
+  padding: 0 20px 20px;
+  background-color: var(--green);
   box-shadow: var(--shadow-card);
 }
 .button {
-  font-family: 'source-code-pro';
-  font-size: 14px;
+  font-size: 16px;
   width: 260px;
   padding: 9px;
-  margin: 10px 0 0;
-  background: linear-gradient(7deg, #fff172, #ff357a);
-  transition: background-color 0.4s ease-in-out;
-  color: #000;
+  margin: 10px 0 0 168px;
   border: none;
   border-radius: 4px;
-  transition: background-color 0.3s ease;
+  color: var(--black-color);
+  background: var(--btn-gradient-rev);
   box-shadow: var(--shadow-btn-box);
   text-shadow: var(--shadow-btn-txt);
-  margin-left: 168px;
+  transition: background-color 0.4s ease-in-out;
 }
 .button:hover {
-  background: linear-gradient(45deg, #ff0077, #ffd500);
+  background: var(--btn-gradient-hover);
 }
 .iconBtn {
   margin-right: 6px;
 }
 .name-label input::placeholder {
-  color: rgba(255, 255, 255, 0.738);
+  color: var(--placeholder-color);
 }
 .tel-label input::placeholder {
-  color: rgba(255, 255, 255, 0.738);
+  color: var(--placeholder-color);
 }
 .tel-label {
   margin-left: 10px;
@@ -42,22 +39,22 @@
 .name-label,
 .tel-label {
   font-size: 22px;
-  text-shadow: var(--label-shadow);
   font-family: 'Menlo';
   padding-top: 15px;
-  color: #ffc107;
+  color: var(--gold);
+  text-shadow: var(--label-shadow);
 }
 .name-input,
 .tel-input {
   display: flex;
-  padding: 10px 15px;
   height: 15px;
   width: 258px;
-  border: var(--accent-border);
-  border-radius: 4px;
+  padding: 10px 15px;
   margin-top: 5px;
+  border-radius: 4px;
   color: var(--white);
-  background-color: #111;
+  border: var(--accent-border);
+  background-color: var(--black-bg);
   box-shadow: var(--input-box-shadow);
 }
 .label-box {

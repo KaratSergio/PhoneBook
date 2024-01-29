@@ -1,16 +1,16 @@
 .login {
   position: absolute;
-  width: 300px;
-  height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  width: 300px;
+  height: 100%;
 }
 .login h2 {
   font-size: 36px;
-  color: #fff;
   margin-bottom: 20px;
+  color: var(--white);
 }
 .login .inputBx {
   position: relative;
@@ -20,27 +20,27 @@
   position: relative;
   width: 256px;
   padding: 12px 20px;
-  background: #1111118b;
-  border: 2px solid #fff;
   border-radius: 40px;
   font-size: 18px;
-  color: #fff;
-  box-shadow: none;
   outline: none;
   margin-bottom: 20px;
+  box-shadow: none;
+  color: var(--white);
+  background: var(--bg-input);
+  border: 2px solid var(--white);
 }
 .button {
-  border-radius: 40px;
-  padding: 12px 20px;
-  width: 300px;
-  background: linear-gradient(45deg, #ff357a, #fff172);
-  border: none;
-  cursor: pointer;
   font-size: 18px;
+  width: 300px;
+  padding: 12px 20px;
   margin-bottom: 8px;
-}
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  background: var(--btn-gradient);
+};
 .login .inputBx input::placeholder {
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--placeholder-color);
 }
 .text {
   text-align: center;
@@ -63,7 +63,7 @@
 .ring i {
   position: absolute;
   inset: 0;
-  border: 2px solid #fff;
+  border: 2px solid var(--white);
   transition: 0.5s;
 }
 .ring i:nth-child(1) {

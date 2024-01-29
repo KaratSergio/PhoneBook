@@ -15,29 +15,27 @@
   overflow: hidden;
   position: relative;
 }
-.rectangle-left {
+.rectangle-left,
+.rectangle-right{
   width: 297.5px;
   height: 155px;
-  color: #111;
-  background: linear-gradient(to right, #ffc107, #ffd700);
+  color: var(--black-bg);
+  background: var(--gold-gradient-logo);
 }
 .rectangle-right {
   width: 205px;
-  height: 156px;
-  color: #111;
-  background: linear-gradient(to right, #ffc107, #ffd700);
 }
 .logo-text {
-  font-family: Arial, sans-serif;
   font-size: 120px;
   font-weight: 900;
+  font-family: Arial, sans-serif;
 }
 .accent-text p {    
-  color: #000;
   font-size: 45px;
   margin-top: -5px;
   letter-spacing: 0.3em;
-  text-shadow: 2px 2px 4px rgba(7, 200, 218, 0.5);
+  color: var(--black-color);
+  text-shadow: var(--neon-shadow);
 }
 .triangle {
   position: absolute;
@@ -45,8 +43,8 @@
   left: 258.5px;
   width: 0;
   height: 0;
+  transform: rotate(90deg);
   border-left: 78px solid transparent;
   border-right: 78px solid transparent;
-  border-bottom: 78px solid #ffd700;
-  transform: rotate(90deg);
+  border-bottom: 78px solid var(--gold-accent);
 }
