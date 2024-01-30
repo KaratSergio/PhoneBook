@@ -1,11 +1,17 @@
 import { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { selectIsLoggedIn } from '../../redux/auth/selectors';
 import { UserMenu } from '../UserMenu/UserMenu';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faSignIn, faRegistered, faContactBook } from '@fortawesome/free-solid-svg-icons';
+import {
+  faHome,
+  faSignIn,
+  faRegistered,
+  faContactBook,
+} from '@fortawesome/free-solid-svg-icons';
 
 import css from './Navigation.module.css';
 
@@ -13,6 +19,7 @@ export const Navigation = () => {
   const isLoggedIn = useSelector(selectIsLoggedIn);
   const location = useLocation();
   const [activeMenu, setActiveMenu] = useState('');
+  const { t } = useTranslation();
 
   useEffect(() => {
     const currentPath = location.pathname;
@@ -33,7 +40,7 @@ export const Navigation = () => {
             className={activeMenu === '/' ? css['active'] : ''}
             onClick={() => handleMenuClick('/')}
           >
-            Home
+            {t('home')}
           </NavLink>
         </div>
         {isLoggedIn ? (
@@ -44,7 +51,7 @@ export const Navigation = () => {
               className={activeMenu === '/contacts' ? css['active'] : ''}
               onClick={() => handleMenuClick('/contacts')}
             >
-              Contacts
+              {t('contacts')}
             </NavLink>
           </div>
         ) : (
@@ -57,7 +64,7 @@ export const Navigation = () => {
                   className={activeMenu === '/register' ? css['active'] : ''}
                   onClick={() => handleMenuClick('/register')}
                 >
-                  Register
+                  {t('register')}
                 </NavLink>
               </div>
             )}
@@ -69,7 +76,7 @@ export const Navigation = () => {
                   className={activeMenu === '/login' ? css['active'] : ''}
                   onClick={() => handleMenuClick('/login')}
                 >
-                  Log In
+                  {t('login')}{' '}
                 </NavLink>
               </div>
             )}

@@ -7,12 +7,17 @@ import { BrowserRouter } from 'react-router-dom';
 import { PersistGate } from 'redux-persist/integration/react';
 import { store, persistor } from './redux/store';
 
+import { I18nextProvider } from 'react-i18next';
+import i18n from './locales/i18n';
+
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <BrowserRouter basename="/goit-react-hw-08-phonebook">
+  <BrowserRouter basename="/goit-react-hw-08-phonebook">
+    <I18nextProvider i18n={i18n}>
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
           <App />
         </PersistGate>
-      </Provider>
+    </Provider>
+    </I18nextProvider>
     </BrowserRouter>
 );
