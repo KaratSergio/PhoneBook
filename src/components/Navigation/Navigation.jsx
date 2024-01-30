@@ -31,7 +31,7 @@ export const Navigation = () => {
   };
 
   return (
-    <>
+    <div className={css['container-main']}>
       <div className={css['container']}>
         <div className={css['icon-box']}>
           <FontAwesomeIcon icon={faHome} />
@@ -85,7 +85,7 @@ export const Navigation = () => {
       </div>
 
       {isLoggedIn && <UserMenu />}
-    </>
+    </div>
   );
 };
 
