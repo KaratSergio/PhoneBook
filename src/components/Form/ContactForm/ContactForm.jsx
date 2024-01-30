@@ -2,12 +2,13 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from '../../../redux/contacts/operations';
 import * as selectors from '../../../redux/contacts/selectors';
 import { nanoid } from '@reduxjs/toolkit';
-
 import Notiflix from 'notiflix';
 import { Loader } from '../../Loader/Loader';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faPhone, faCheck } from '@fortawesome/free-solid-svg-icons';
+
+import { useTranslation } from 'react-i18next';
 
 import css from './ContactForm.module.css';
 
@@ -16,6 +17,7 @@ export const ContactForm = () => {
   const contacts = useSelector(selectors.selectContacts);
   const isLoading = useSelector(selectors.selectLoading);
   const error = useSelector(selectors.selectError);
+  const { t } = useTranslation();
 
   const handleSubmit = e => {
     e.preventDefault();
@@ -36,11 +38,11 @@ export const ContactForm = () => {
 
       dispatch(addContact(newContact));
 
-      Notiflix.Notify.success('Contact added successfully', {
+      Notiflix.Notify.success(t('contactFormSuccessMessage'), {
         position: 'left-top',
       });
     } else {
-      Notiflix.Notify.warning('Contact with this name already exists', {
+      Notiflix.Notify.warning(t('contactFormDuplicateMessage'), {
         position: 'left-top',
       });
     }
@@ -55,39 +57,37 @@ export const ContactForm = () => {
       <label className={css['name-label']}>
         <span className={css['label-box']}>
           <FontAwesomeIcon icon={faUser} className={css['icon-input']} />
-          Name
+          {t('contactFormName')}
         </span>
         <input
           className={css['name-input']}
           type="text"
           name="name"
-          placeholder="Enter name"
+          placeholder={t('contactFormNamePlaceholder')}
           required
-          pattern="[A-Za-zА-Яа-яЁё\s]+"
-          title="Please enter only letters and spaces"
+          attern="[A-Za-zА-ЯЁа-яёҐґІіЇїЄє\s]+"
+          title={t('contactFormNameTitle')}
         />
       </label>
       <label className={css['tel-label']}>
         <span className={css['label-box']}>
           <FontAwesomeIcon icon={faPhone} className={css['icon-input']} />
-          Number
+          {t('contactFormNumber')}
         </span>
         <input
           className={css['tel-input']}
           type="tel"
           name="number"
-          placeholder="Enter phone number"
+          placeholder={t('contactFormNumberPlaceholder')}
           required
           pattern="[0-9\-]+"
-          title="Please enter only numbers"
+          title={t('contactFormNumberTitle')}
         />
       </label>
       <button className={css['button']} type="submit">
         <FontAwesomeIcon icon={faCheck} className={css['iconBtn']} />
-        Add Contact
+        {t('contactFormButton')}
       </button>
     </form>
   );
 };
-
-export default ContactForm;

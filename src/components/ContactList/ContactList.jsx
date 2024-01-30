@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteContact } from '../../redux/contacts/operations';
 import * as selectors from '../../redux/contacts/selectors';
+import { useTranslation } from 'react-i18next';
 import { Loader } from '../Loader/Loader';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -14,19 +15,23 @@ const ContactInfo = ({ name, number }) => (
       <FontAwesomeIcon className={css.nameIcon} icon={faUser} />
       <span className={css.name}>{name}:</span>
     </div>
-    <span>{number}</span>
+    <span className={css.contactNum}>{number}</span>
   </div>
 );
 
-const ContactListItem = ({ contact, onDelete }) => (
-  <li key={contact.id} className={css.item}>
-    <ContactInfo name={contact.name} number={contact.number} />
-    <button className={css.deleteButton} onClick={() => onDelete(contact)}>
-      <FontAwesomeIcon icon={faTrash} />
-      Delete
-    </button>
-  </li>
-);
+const ContactListItem = ({ contact, onDelete }) => {
+  const { t } = useTranslation();
+
+  return (
+    <li key={contact.id} className={css.item}>
+      <ContactInfo name={contact.name} number={contact.number} />
+      <button className={css.deleteButton} onClick={() => onDelete(contact)}>
+        <FontAwesomeIcon icon={faTrash} />
+        {t('deleteButton')}
+      </button>
+    </li>
+  );
+};
 
 export const ContactList = () => {
   const dispatch = useDispatch();

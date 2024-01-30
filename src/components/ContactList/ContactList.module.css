@@ -17,7 +17,11 @@
 .contactInfo {
   display: flex;
   justify-content: space-between;
-  width: 280px;
+  letter-spacing: 0.1em;
+  width: 480px;
+}
+.contactNum {
+  letter-spacing: 0.3em;
 }
 .name {
   font-family: 'source-code-pro';

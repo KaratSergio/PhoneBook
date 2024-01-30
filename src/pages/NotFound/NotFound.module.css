@@ -6,17 +6,17 @@
 
 /* Animation */
 .frame {
-  padding-top: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 /* Body Lamp */
 .body-lamp {
   position: relative;
-  width: 300px;
-  height: 450px;
+  width: 250px;
+  height: 355px;
   background: radial-gradient(#001122, #00ffff35);
   clip-path: polygon(25% 0%, 75% 0%, 100% 75%, 75% 100%, 25% 100%, 0 75%);
   overflow: hidden;
@@ -25,7 +25,7 @@
 /* Base Lamp / Top */
 .base-lamp {
   position: relative;
-  width: 245px;
+  width: 225px;
   height: 100px;
   bottom: 70px;
   background: #111133;
@@ -34,7 +34,7 @@
 }
 .base {
   position: relative;
-  width: 225px;
+  width: 205px;
   height: 24px;
   bottom: 75px;
   background: #111133;
@@ -42,7 +42,7 @@
 }
 .top {
   position: relative;
-  width: 150px;
+  width: 130px;
   height: 24px;
   top: 0;
   background: #111133;
