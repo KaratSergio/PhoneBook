@@ -3,5 +3,7 @@
   "register": "Реєстрація",
   "login": "Вхід",
   "contacts": "Контакти",
-  "notFound": "Сторінку не знайдено"
+  "notFound": "Сторінку не знайдено",
+  "homeWelcome": "Книга контактів!",
+  "homeCreatedOn": "створено на "
 }

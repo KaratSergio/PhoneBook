@@ -3,5 +3,7 @@
   "register": "Register",
   "login": "Login",
   "contacts": "Contacts",
-  "notFound": "Page not found"
+  "notFound": "Page not found",
+  "homeWelcome": "Welcome to Phonebook!",
+  "homeCreatedOn": "created on "
 }
