@@ -20,7 +20,7 @@
   margin-left: 580px;
 }
 .language-switch button {
-  background-color: rgb(39, 98, 248); 
+  background-color: var(--gold); 
   color: black;
   border: none;
   padding: 4px 8px;
@@ -28,7 +28,7 @@
   transition: background-color 0.3s, color 0.3s;
 }
 .language-switch button:disabled {
-  background-color: var(--gold); 
+  background-color: var(--blue); 
   color: black; 
   border: none; 
 }

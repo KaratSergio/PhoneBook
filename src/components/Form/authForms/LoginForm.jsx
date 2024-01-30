@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { selectErrorLogin } from '../../../redux/auth/selectors';
 import { logIn } from '../../../redux/auth/operations';
+import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 
 import css from './Forms.module.css';
@@ -8,6 +9,7 @@ import css from './Forms.module.css';
 export const LoginForm = () => {
   const dispatch = useDispatch();
   const errorLogin = useSelector(selectErrorLogin);
+  const { t } = useTranslation();
 
   const handleSubmit = e => {
     e.preventDefault();
@@ -25,18 +27,18 @@ export const LoginForm = () => {
   return (
     <>
       <div className={css['ring']}>
-        {errorLogin && <div>Error login</div>}
+        {errorLogin && <div>{t('loginFormError')}</div>}
         <i style={{ '--clr': '#00ff0a' }}></i>
         <i style={{ '--clr': '#ff0057' }}></i>
         <i style={{ '--clr': '#fffd44' }}></i>
         <div className={css['login']}>
-          <h2>Login</h2>
+          <h2>{t('loginFormTitle')}</h2>
           <form autoComplete="off" onSubmit={handleSubmit}>
             <label className={css['inputBx']}>
               <input
                 type="email"
                 name="email"
-                placeholder="e-mail"
+                placeholder={t('loginFormEmailPlaceholder')}
                 autoComplete="username"
                 required
                 autoFocus
@@ -46,18 +48,18 @@ export const LoginForm = () => {
               <input
                 type="password"
                 name="password"
-                placeholder="password"
+                placeholder={t('loginFormPasswordPlaceholder')}
                 autoComplete="current-password"
                 required
               />
             </label>
             <button className={css['button']} type="submit">
-              Sign In
+              {t('loginFormButton')}
             </button>
             <p className={css['text']}>
-              Don't have an account?{' '}
+              {t('loginFormNoAccount')}{' '}
               <NavLink className={css['text-link']} to="/register">
-                Sign up
+                {t('registerFormButton')}
               </NavLink>
             </p>
           </form>

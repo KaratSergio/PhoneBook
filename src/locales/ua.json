@@ -5,5 +5,17 @@
   "contacts": "Контакти",
   "notFound": "Сторінку не знайдено",
   "homeWelcome": "Книга контактів!",
-  "homeCreatedOn": "створено на "
+  "homeCreatedOn": "створено на ",
+  "registerFormTitle": "Реєстрація",
+  "registerFormName": "Ім'я",
+  "registerFormEmail": "Електронна пошта",
+  "registerFormPassword": "Пароль",
+  "registerFormButton": "Зареєструватися",
+  "registerFormLink": "Вже зареєстровані? Увійдіть",
+  "loginFormTitle": "Вхід",
+  "loginFormEmailPlaceholder": "e-mail",
+  "loginFormPasswordPlaceholder": "пароль",
+  "loginFormButton": "Увійти",
+  "loginFormNoAccount": "Не маєте облікового запису?",
+  "loginFormError": "Помилка входу"
 }

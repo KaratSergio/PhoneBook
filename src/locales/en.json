@@ -5,5 +5,17 @@
   "contacts": "Contacts",
   "notFound": "Page not found",
   "homeWelcome": "Welcome to Phonebook!",
-  "homeCreatedOn": "created on "
+  "homeCreatedOn": "created on ",
+  "registerFormTitle": "Registration",
+  "registerFormName": "Name",
+  "registerFormEmail": "Email",
+  "registerFormPassword": "Password",
+  "registerFormButton": "Register",
+  "registerFormLink": "Already registered? Sign in",
+  "loginFormTitle": "Login",
+  "loginFormEmailPlaceholder": "e-mail",
+  "loginFormPasswordPlaceholder": "password",
+  "loginFormButton": "Sign In",
+  "loginFormNoAccount": "Don't have an account?",
+  "loginFormError": "Login error"
 }
