@@ -19,12 +19,14 @@ export const Layout = () => {
     <div className={css['container']}>
       <div className={css['language-switch']}>
         <button
+          className={css['btnUa']}
           onClick={() => changeLanguage('ua')}
           disabled={currentLanguage === 'ua'}
         >
           UA
         </button>
         <button
+          className={css['btnEn']}
           onClick={() => changeLanguage('en')}
           disabled={currentLanguage === 'en'}
         >
