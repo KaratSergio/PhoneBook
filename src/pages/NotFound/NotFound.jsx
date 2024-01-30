@@ -1,4 +1,3 @@
-import React from 'react';
 import css from './NotFound.module.css';
 
 export const NotFound = () => {
