@@ -16,13 +16,13 @@
   margin: 40px 0 40px;
 }
 /* Localization */
-/* .language-switch {
-  border-radius: 4px;
-} */
+.language-switch {
+  margin-left: 580px;
+}
 .language-switch button {
-  background-color: white; 
+  background-color: rgb(39, 98, 248); 
   color: black;
-  border: 1px solid #ccc; 
+  border: none;
   padding: 4px 8px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
@@ -30,13 +30,11 @@
 .language-switch button:disabled {
   background-color: var(--gold); 
   color: black; 
-  border: 1px solid tomato; 
+  border: none; 
 }
 .btnUa {
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
+  border-top-left-radius: 8px;
 }
 .btnEn {
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 8px;
 }
