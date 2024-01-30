@@ -15,8 +15,8 @@
 /* Body Lamp */
 .body-lamp {
   position: relative;
-  width: 250px;
-  height: 355px;
+  width: 273px;
+  height: 428px;
   background: radial-gradient(#001122, #00ffff35);
   clip-path: polygon(25% 0%, 75% 0%, 100% 75%, 75% 100%, 25% 100%, 0 75%);
   overflow: hidden;
@@ -42,7 +42,7 @@
 }
 .top {
   position: relative;
-  width: 130px;
+  width: 139px;
   height: 24px;
   top: 0;
   background: #111133;
