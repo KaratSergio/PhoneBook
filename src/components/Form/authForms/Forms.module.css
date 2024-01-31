@@ -44,9 +44,13 @@
 }
 .text {
   text-align: center;
+  font-family: cursive;
+  font-size: 12px;
 }
 .text-link {
   margin-left: 20px;
+  font-size: 14px;
+  color: var(--gold);
 }
 
 /* Animation */
