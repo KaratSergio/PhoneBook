@@ -13,6 +13,9 @@ import { Layout } from '../Layout/Layout';
 import { Loader } from '../Loader/Loader';
 import { NotFound } from '../../pages/NotFound/NotFound';
 
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const LoginPage = lazy(() => import('../../pages/Login/Login'));
 const RegisterPage = lazy(() => import('../../pages/Register/Register'));
 const ContactsPage = lazy(() => import('../../pages/Contacts/Contacts'));
@@ -58,6 +61,19 @@ const App = () => {
           </Route>
         </Routes>
       )}
+      <ToastContainer
+        font-size="15px"
+        position="top-left"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
     </>
   );
 };
