@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  max-width: 630px;
+  max-width: 230px;
   border-radius: 8px;
   padding: 0 20px 20px;
   background-color: var(--green);
@@ -10,7 +10,7 @@
 }
 .button {
   font-size: 16px;
-  width: 260px;
+  width: 60px;
   padding: 9px;
   margin: 10px 0 0 168px;
   border: none;
@@ -48,7 +48,7 @@
 .tel-input {
   display: flex;
   height: 15px;
-  width: 258px;
+  width: 158px;
   padding: 10px 15px;
   margin-top: 5px;
   border-radius: 4px;
@@ -66,3 +66,20 @@
   font-size: 18px;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+.form-container {
+  max-width: 630px;
+}
+.name-input,
+.tel-input {
+  width: 258px;
+}
+.button {
+  width: 260px;
+}
+
+
+
+}
+
+/* @media screen and (min-width: 1440px) {} */

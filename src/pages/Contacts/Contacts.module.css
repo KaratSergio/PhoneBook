@@ -1,9 +1,13 @@
 .container {
-  width: 630px;
-  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 325px;
+  height: 100vh;
 }
 .box {
-  width: 590px;
+  width: 360px;
   padding: 20px;
   border-radius: 8px;
   background-color: var(--green);
@@ -15,4 +19,14 @@
 .sub-title {
   margin-top: 15px;
   letter-spacing: 0.2em;
+}
+@media screen and (min-width: 768px) {
+.box {
+  width: 590px;
+}
+.container {
+  display: block;
+  width: 630px;
+  height: 650px;
+}
 }

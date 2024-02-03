@@ -18,7 +18,7 @@
   display: flex;
   justify-content: space-between;
   letter-spacing: 0.1em;
-  width: 480px;
+  width: 380px;
 }
 .contactNum {
   letter-spacing: 0.3em;
@@ -50,3 +50,18 @@
 .deleteButton:hover {
   background-color: var(--red-accent);
 }
+
+
+@media screen and (min-width: 768px) {
+
+.contactInfo {
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 0.1em;
+  width: 480px;
+}
+
+}
+
+
+/* @media screen and (min-width: 1440px) {}  */
