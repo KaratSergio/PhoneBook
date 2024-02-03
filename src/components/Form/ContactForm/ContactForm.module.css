@@ -2,17 +2,17 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  max-width: 230px;
+  max-width: 280px;
   border-radius: 8px;
   padding: 0 20px 20px;
   background-color: var(--green);
   box-shadow: var(--shadow-card);
 }
 .button {
-  font-size: 16px;
-  width: 60px;
+  font-size: 14px;
+  width: 160px;
   padding: 9px;
-  margin: 10px 0 0 168px;
+  margin: 10px 0 0 62px;
   border: none;
   border-radius: 4px;
   color: var(--black-color);
@@ -33,9 +33,9 @@
 .tel-label input::placeholder {
   color: var(--placeholder-color);
 }
-.tel-label {
+/* .tel-label {
   margin-left: 10px;
-}
+} */
 .name-label,
 .tel-label {
   font-size: 22px;
@@ -48,7 +48,7 @@
 .tel-input {
   display: flex;
   height: 15px;
-  width: 158px;
+  width: 248px;
   padding: 10px 15px;
   margin-top: 5px;
   border-radius: 4px;
@@ -75,11 +75,13 @@
   width: 258px;
 }
 .button {
+  font-size: 16px;
   width: 260px;
+  margin: 10px 0 0 168px;
 }
-
-
-
+.tel-label {
+  margin-left: 10px;
+}
 }
 
 /* @media screen and (min-width: 1440px) {} */

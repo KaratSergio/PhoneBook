@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 25px;
+  height: 55px;
   padding-left: 3px;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -21,7 +21,11 @@
   width: 380px;
 }
 .contactNum {
-  letter-spacing: 0.3em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 5px;
+  width: 120px;
 }
 .name {
   font-family: 'source-code-pro';
@@ -34,10 +38,11 @@
 }
 .nameIcon {
   color: var(--icon-color);
+  margin-left: 5px;
 }
 .deleteButton {
   display: flex;
-  padding: 5px 10px;
+  padding: 20px 10px;
   gap: 6px;
   border: none;
   border-radius: 4px;
@@ -53,15 +58,20 @@
 
 
 @media screen and (min-width: 768px) {
-
 .contactInfo {
   display: flex;
   justify-content: space-between;
   letter-spacing: 0.1em;
   width: 480px;
 }
-
+.item {
+  height: 25px;
 }
-
-
+.contactNum {
+  letter-spacing: 0.3em;
+}
+.deleteButton {
+  padding: 5px 10px;
+}
+}
 /* @media screen and (min-width: 1440px) {}  */
