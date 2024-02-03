@@ -9,7 +9,8 @@
   width: 360px;
   padding: 20px;
   border-radius: 8px;
-  background-color: rgb(16, 61, 16);
+  /* background-color: rgb(16, 61, 16); */
+  background-color: var(--green);
   box-shadow: var(--shadow-card);
 }
 .title {
@@ -22,7 +23,7 @@
 @media screen and (min-width: 768px) {
 .box {
   width: 590px;
-  background-color: var(--green);
+  /* background-color: var(--green); */
 }
 .container {
   display: block;
