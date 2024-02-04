@@ -9,9 +9,8 @@
   width: 360px;
   padding: 20px;
   border-radius: 8px;
-  /* background-color: rgb(16, 61, 16); */
   background-color: var(--green);
-  box-shadow: var(--shadow-card);
+  box-shadow: var(--shadow-card), var(--shadow-card-accent);
 }
 .title {
   letter-spacing: 0.2em;
@@ -21,13 +20,12 @@
   letter-spacing: 0.2em;
 }
 @media screen and (min-width: 768px) {
-.box {
-  width: 590px;
-  /* background-color: var(--green); */
-}
-.container {
-  display: block;
-  width: 630px;
-  height: 650px;
-}
+  .box {
+    width: 590px;
+  }
+  .container {
+    display: block;
+    width: 630px;
+    height: 650px;
+  }
 }

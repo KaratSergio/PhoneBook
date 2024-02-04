@@ -24,6 +24,7 @@
   /* shadows */
   --shadow-main-title: 0 5px 4px rgba(0, 0, 0, 0.2);
   --shadow-card: 4px 2px 4px rgba(0, 0, 0, 0.2);
+  --shadow-card-accent: -4px 2px 4px rgba(0, 0, 0, 0.2);
   --shadow-title: 2px 2px 4px rgba(0, 0, 0, 0.3);
   --shadow-btn-box: 0 2px 4px rgba(0, 0, 0, 0.4);
   --shadow-btn-txt: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -52,16 +53,16 @@ body {
   background-position: center;
 }
 input {
-  background-color: var(--black-bg); 
+  background-color: var(--black-bg);
   color: white;
 }
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-    transition: background-color 5000s ease-in-out 0s;
-    color: white !important;
-    -webkit-text-fill-color: white !important; 
+  transition: background-color 5000s ease-in-out 0s;
+  color: white !important;
+  -webkit-text-fill-color: white !important;
 }
 a {
   color: currentColor;
@@ -89,7 +90,6 @@ img {
 button {
   cursor: pointer;
 }
-
 
 /* .container {
   max-width: 375px;
