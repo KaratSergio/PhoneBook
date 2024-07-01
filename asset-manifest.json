@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/PhoneBook/static/css/main.50dad650.css",
-    "main.js": "/PhoneBook/static/js/main.f618780e.js",
+    "main.js": "/PhoneBook/static/js/main.f5286775.js",
     "static/css/744.2bdb73e5.chunk.css": "/PhoneBook/static/css/744.2bdb73e5.chunk.css",
     "static/js/744.fdfc39c5.chunk.js": "/PhoneBook/static/js/744.fdfc39c5.chunk.js",
     "static/css/477.2bdb73e5.chunk.css": "/PhoneBook/static/css/477.2bdb73e5.chunk.css",
     "static/js/477.4e4fdca6.chunk.js": "/PhoneBook/static/js/477.4e4fdca6.chunk.js",
-    "static/css/126.3640a0f8.chunk.css": "/PhoneBook/static/css/126.3640a0f8.chunk.css",
+    "static/css/126.d75f9555.chunk.css": "/PhoneBook/static/css/126.d75f9555.chunk.css",
     "static/js/126.46582110.chunk.js": "/PhoneBook/static/js/126.46582110.chunk.js",
     "static/js/694.9b88b762.chunk.js": "/PhoneBook/static/js/694.9b88b762.chunk.js",
     "static/media/bg-fon.jpg": "/PhoneBook/static/media/bg-fon.f226c22188e53a65fed5.jpg",
@@ -14,17 +14,17 @@
     "static/media/Quicksand-Light.woff2": "/PhoneBook/static/media/Quicksand-Light.98922170c63103d5f7ad.woff2",
     "index.html": "/PhoneBook/index.html",
     "main.50dad650.css.map": "/PhoneBook/static/css/main.50dad650.css.map",
-    "main.f618780e.js.map": "/PhoneBook/static/js/main.f618780e.js.map",
+    "main.f5286775.js.map": "/PhoneBook/static/js/main.f5286775.js.map",
     "744.2bdb73e5.chunk.css.map": "/PhoneBook/static/css/744.2bdb73e5.chunk.css.map",
     "744.fdfc39c5.chunk.js.map": "/PhoneBook/static/js/744.fdfc39c5.chunk.js.map",
     "477.2bdb73e5.chunk.css.map": "/PhoneBook/static/css/477.2bdb73e5.chunk.css.map",
     "477.4e4fdca6.chunk.js.map": "/PhoneBook/static/js/477.4e4fdca6.chunk.js.map",
-    "126.3640a0f8.chunk.css.map": "/PhoneBook/static/css/126.3640a0f8.chunk.css.map",
+    "126.d75f9555.chunk.css.map": "/PhoneBook/static/css/126.d75f9555.chunk.css.map",
     "126.46582110.chunk.js.map": "/PhoneBook/static/js/126.46582110.chunk.js.map",
     "694.9b88b762.chunk.js.map": "/PhoneBook/static/js/694.9b88b762.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.50dad650.css",
-    "static/js/main.f618780e.js"
+    "static/js/main.f5286775.js"
   ]
 }
