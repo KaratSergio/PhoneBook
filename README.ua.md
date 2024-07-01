@@ -19,7 +19,7 @@
 - Фільтрація контактів
 - Маршрутизація
 
-<img src="./src/img/Phonebook.png alt="Home page" width="796" height="756">
+<img src="./public/Phonebook.png" alt="Home page" width="796" height="756">
 
 Цей проект являє собою веб-додаток для керування контактами, що включає функції
 реєстрації та авторизації користувачів, додавання та видалення контактів, а
@@ -28,7 +28,7 @@
 додавати нові контакти, видаляти непотрібні та фільтрувати контакти за певними
 критеріями, такими як ім'я або електронна пошта.
 
-<img src="./src/img/PhonebookLogin2.png alt="Private page" width="796"
+<img src="./public/PonebookLogin2.png" alt="Private page" width="796"
 height="756">
 
 ## Використані технології
