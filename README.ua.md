@@ -26,8 +26,8 @@
 додавати нові контакти, видаляти непотрібні та фільтрувати контакти за певними
 критеріями, такими як ім'я або електронна пошта.
 
-<img src="./src/img/Phonebook.png" alt="Home page" width="900" height="500">
-<img src="./src/img/PhonebookLogin.png" alt="Private page" width="900" height="500">
+<img src="./src/img/Phonebook.png" alt="Home page" width="796" height="756">
+<img src="./src/img/PhonebookLogin.png" alt="Private page" width="796" height="756">
 
 ## Використані технології
 
