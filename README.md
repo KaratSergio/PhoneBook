@@ -18,7 +18,7 @@ This repository contains a project designed for managing phone contacts.
 - Contact filtering
 - Routing
 
-<img src="./src/img/Phonebook.png alt="Home page" width="796" height="756">
+<img src="./src/img/Phonebook.png" alt="Home page" width="796" height="756">
 
 This project is a web application for managing contacts, including functions for
 registering and authorizing users, adding and deleting contacts, and filtering
@@ -26,7 +26,7 @@ contacts. The app allows users to register, log in and manage their contacts
 securely. Users can add new contacts, remove unnecessary ones, and filter
 contacts based on specific criteria such as name or email.
 
-<img src="./src/img/PhonebookLogin2.png alt="Private page" width="796"
+<img src="./src/img/PhonebookLogin2.png" alt="Private page" width="796"
 height="756">
 
 ## Technologies Used
