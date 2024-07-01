@@ -9,7 +9,6 @@ This repository contains a project designed for managing phone contacts.
 - [Project overview](#project-overview)
 - [Technologies used](#technologies-used)
 - [Installation](#instalattion)
-- [Configuration](#configuration)
 - [Server Commands](#server-commands)
 
 ## Project Overview
